@@ -1,8 +1,7 @@
-import firebase from 'firebase/app';
-
-import 'firebase/analytics';
-import 'firebase/auth';
-import 'firebase/firestore';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
+import { getAnalytics } from 'firebase/analytics';
 const firebaseConfig = {
     apiKey: "AIzaSyAVdH638wdylR3TATqAk-s2siFJSnyw-Ck",
     authDomain: "chat-app-4899f.firebaseapp.com",
@@ -14,7 +13,7 @@ const firebaseConfig = {
   };
   
   // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
+  const app = firebase.initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
 
 const auth = firebase.auth();
