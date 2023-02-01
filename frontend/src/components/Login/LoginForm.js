@@ -1,6 +1,6 @@
 import React from 'react'
 import {Row, Col, Button, Typography} from 'antd'
-import  './LoginForm.css'
+import  './LoginForm.module.scss'
 import firebase, {auth} from '../../firebase/config';
 import  {useHistory} from 'react-router-dom';
 
